@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Manager App</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <div id="container">
+        <!-- <h1>To-Do List <i class="fa fa-plus"></i></h1>
+        <input type="text" placeholder="Add New Todo">
+
+        <ul>
+            <li><span><i class="fa fa-trash"></i></span> Go To Maths Class</li>
+            <li><span><i class="fa fa-trash"></i></span> Buy New Clothes</li>
+            <li><span><i class="fa fa-trash"></i></span> Visit George</li>
+        </ul> -->
+
+         <h1>To-Do List <i class="fa fa-plus"></i></h1>
+        <!-- <input type="text" placeholder="Add New Todo"> -->
+         <form method="POST">
+        <!-- {{template_form.todo.label}} -->
+        {{template_form.todo(placeholder="Add To Do and Press Enter")}}
+
+        {{template_form.submit()}}
+
+        </form>
+
+        <ul>
+            {% for todo in todos %}
+            <li><span title="Delete"><a id="deleteBtn" href="delete/{{todo.id}}"><i class="fa fa-trash"></i></a></span> {{todo.todo_text}}</li>
+            <!-- <li><span><i class="fa fa-trash"></i></span> Buy New Clothes</li>
+            <li><span><i class="fa fa-trash"></i></span> Visit George</li> -->
+            {% endfor %}
+
+        </ul>
+    
+    </div>
+
+    <footer>
+        <p>Developed By Humairah Mujawar</p>
+    </footer>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
