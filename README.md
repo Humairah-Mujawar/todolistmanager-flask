@@ -9,7 +9,7 @@ The To Do list Manager is built to create, update and manage tasks, from the app
    ```
    python app.py runserver
    ```
-4. The CMD with give a URL, copy and paste it in browser to open app. <br/>
+4. The Terminal will give a URL, copy and paste it in browser to open app. <br/>
    For example:
    ```
     Running on http://127.0.0.1:5000
