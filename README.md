@@ -1,8 +1,8 @@
-### To Do list Manager
+# To Do list Manager
 
 The To Do list Manager is built to create, update and manage tasks, from the app user interface.
 
-# Steps to Run
+## Steps to Run
 1. Download project
 2. Open Terminal and navigate to project path
 3. Type command
@@ -13,4 +13,4 @@ The To Do list Manager is built to create, update and manage tasks, from the app
    For example:
    ```
     Running on http://127.0.0.1:5000
-  ```
+   ```
